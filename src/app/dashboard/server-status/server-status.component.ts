@@ -4,7 +4,7 @@ import { DashboardCardComponent } from '../dashboard-card/dashboard-card.compone
 @Component({
   selector: 'app-server-status',
   standalone: true,
-  imports: [DashboardCardComponent],
+  imports: [],
   templateUrl: './server-status.component.html',
   styleUrl: './server-status.component.css',
 })

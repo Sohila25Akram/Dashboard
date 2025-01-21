@@ -4,7 +4,7 @@ import { DashboardCardComponent } from '../dashboard-card/dashboard-card.compone
 @Component({
   selector: 'app-traffic',
   standalone: true,
-  imports: [DashboardCardComponent],
+  imports: [],
   templateUrl: './traffic.component.html',
   styleUrl: './traffic.component.css',
 })

@@ -1,13 +1,25 @@
 <div id="dashboard">
-  <div class="dashboard-item">
+  <app-dashboard-card
+    [image]="'status.png'"
+    [altText]="'A signal symbol'"
+    title="Server Status"
+  >
     <app-server-status></app-server-status>
-  </div>
+  </app-dashboard-card>
 
-  <div class="dashboard-item">
+  <app-dashboard-card
+    [image]="'globe.png'"
+    [altText]="'A globe'"
+    title="Traffic"
+  >
     <app-traffic></app-traffic>
-  </div>
+  </app-dashboard-card>
 
-  <div class="dashboard-item">
+  <app-dashboard-card
+    [image]="'list.png'"
+    [altText]="'A list of items'"
+    title="Support Tickets"
+  >
     <app-support-tickets></app-support-tickets>
-  </div>
+  </app-dashboard-card>
 </div>
