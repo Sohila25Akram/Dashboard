@@ -4,14 +4,20 @@
     <input name="title" id="title" #titleInput />
   </p> -->
   <app-control label="Title">
-    <input name="title" id="title" #titleInput />
+    <input name="title" id="title" #titleInput #input />
   </app-control>
   <!-- <p>
     <label>Request</label>
     <textarea name="request" id="request" rows="3" #requestInput></textarea>
   </p> -->
   <app-control label="Request">
-    <textarea name="request" id="request" rows="3" #requestInput></textarea>
+    <textarea
+      name="request"
+      id="request"
+      rows="3"
+      #requestInput
+      #input
+    ></textarea>
   </app-control>
   <!-- <p>
     <button>

@@ -6,7 +6,22 @@
 <!-- <div id="status">
     <p>Todo...</p>
   </div> -->
-<div id="new-ticket">
-  <app-new-ticket />
+<div id="tickets">
+  <div>
+    <ul>
+      @for(ticket of tickets; track ticket.id){
+      <li>
+        <app-ticket [data]="ticket" (close)="onCompleteTask(ticket.id)" />
+        <!-- -{{ $count }} -->
+      </li>
+      }@empty{
+      <p>No tickets available</p>
+      }
+    </ul>
+  </div>
+  <div id="new-ticket">
+    <app-new-ticket (add)="onAdd($event)" />
+  </div>
 </div>
+
 <!-- </app-dashboard-card> -->
